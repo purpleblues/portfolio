@@ -226,6 +226,11 @@ font-family: 'Rubik', sans-serif;
   opacity: 0.9;
 }
 
+.blog-link{
+  text-decoration: underline;
+  color: white;
+}
+
 /*-------skills------*/
 
 .skills-container {

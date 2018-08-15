@@ -12,11 +12,12 @@ let $room03c = $("#room03-component-c");
 
 let $layoutImg = $(".layout-img");
 
-let animation01 = function() {
-  $room01a.on("mouseenter", function() {
+let animation01 = function () {
+  $room01a.on("mouseenter", function () {
     TweenMax.to($(this), 0.6, {
       scale: 1.1,
       opacity: 1,
+      boxShadow: "0px 0px 0px black",
       ease: Elastic.easeOut.config(1, 0.7)
     });
     TweenMax.to($room02a, 0.6, {
@@ -27,11 +28,12 @@ let animation01 = function() {
     TweenMax.to($room03a, 0.6, {
       scale: 1.1,
       opacity: 1,
+
       ease: Elastic.easeOut.config(1, 0.7)
     });
   });
 
-  $room01a.on("mouseleave", function() {
+  $room01a.on("mouseleave", function () {
     TweenMax.to($(this), 0.6, {
       scale: 1,
       opacity: 1,
@@ -52,8 +54,8 @@ let animation01 = function() {
 
 animation01();
 
-let animation02 = function() {
-  $room02a.on("mouseenter", function() {
+let animation02 = function () {
+  $room02a.on("mouseenter", function () {
     TweenMax.to($(this), 0.6, {
       scale: 1.1,
       opacity: 1,
@@ -71,7 +73,7 @@ let animation02 = function() {
     });
   });
 
-  $room02a.on("mouseleave", function() {
+  $room02a.on("mouseleave", function () {
     TweenMax.to($(this), 0.6, {
       scale: 1,
       opacity: 1,
@@ -92,8 +94,8 @@ let animation02 = function() {
 
 animation02();
 
-let animation03 = function() {
-  $room03a.on("mouseenter", function() {
+let animation03 = function () {
+  $room03a.on("mouseenter", function () {
     TweenMax.to($(this), 0.6, {
       scale: 1.1,
       opacity: 1,
@@ -111,7 +113,7 @@ let animation03 = function() {
     });
   });
 
-  $room03a.on("mouseleave", function() {
+  $room03a.on("mouseleave", function () {
     TweenMax.to($(this), 0.6, {
       scale: 1,
       opacity: 1,
@@ -134,8 +136,8 @@ animation03();
 
 ///
 
-let animation04 = function() {
-  $room01b.on("mouseenter", function() {
+let animation04 = function () {
+  $room01b.on("mouseenter", function () {
     TweenMax.to($(this), 0.6, {
       scale: 1.1,
       opacity: 1,
@@ -153,7 +155,7 @@ let animation04 = function() {
     });
   });
 
-  $room01b.on("mouseleave", function() {
+  $room01b.on("mouseleave", function () {
     TweenMax.to($(this), 0.6, {
       scale: 1,
       opacity: 1,
@@ -176,8 +178,8 @@ animation04();
 
 ///
 
-let animation05 = function() {
-  $room02b.on("mouseenter", function() {
+let animation05 = function () {
+  $room02b.on("mouseenter", function () {
     TweenMax.to($(this), 0.6, {
       scale: 1.1,
       opacity: 1,
@@ -195,7 +197,7 @@ let animation05 = function() {
     });
   });
 
-  $room02b.on("mouseleave", function() {
+  $room02b.on("mouseleave", function () {
     TweenMax.to($(this), 0.6, {
       scale: 1,
       opacity: 1,
@@ -218,8 +220,8 @@ animation05();
 
 ///
 
-let animation06 = function() {
-  $room03b.on("mouseenter", function() {
+let animation06 = function () {
+  $room03b.on("mouseenter", function () {
     TweenMax.to($(this), 0.6, {
       scale: 1.1,
       opacity: 1,
@@ -237,7 +239,7 @@ let animation06 = function() {
     });
   });
 
-  $room03b.on("mouseleave", function() {
+  $room03b.on("mouseleave", function () {
     TweenMax.to($(this), 0.6, {
       scale: 1,
       opacity: 1,
@@ -260,8 +262,8 @@ animation06();
 
 ///
 
-let animation07 = function() {
-  $room01c.on("mouseenter", function() {
+let animation07 = function () {
+  $room01c.on("mouseenter", function () {
     TweenMax.to($(this), 0.6, {
       scale: 1.1,
       opacity: 1,
@@ -279,7 +281,7 @@ let animation07 = function() {
     });
   });
 
-  $room01c.on("mouseleave", function() {
+  $room01c.on("mouseleave", function () {
     TweenMax.to($(this), 0.6, {
       scale: 1,
       opacity: 1,
@@ -300,8 +302,8 @@ let animation07 = function() {
 
 animation07();
 
-let animation08 = function() {
-  $room02c.on("mouseenter", function() {
+let animation08 = function () {
+  $room02c.on("mouseenter", function () {
     TweenMax.to($(this), 0.6, {
       scale: 1.1,
       opacity: 1,
@@ -319,7 +321,7 @@ let animation08 = function() {
     });
   });
 
-  $room02c.on("mouseleave", function() {
+  $room02c.on("mouseleave", function () {
     TweenMax.to($(this), 0.6, {
       scale: 1,
       opacity: 1,
@@ -340,8 +342,8 @@ let animation08 = function() {
 
 animation08();
 
-let animation09 = function() {
-  $room03c.on("mouseenter", function() {
+let animation09 = function () {
+  $room03c.on("mouseenter", function () {
     TweenMax.to($(this), 0.6, {
       scale: 1.1,
       opacity: 1,
@@ -359,7 +361,7 @@ let animation09 = function() {
     });
   });
 
-  $room03c.on("mouseleave", function() {
+  $room03c.on("mouseleave", function () {
     TweenMax.to($(this), 0.6, {
       scale: 1,
       opacity: 1,
