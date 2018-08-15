@@ -1,0 +1,300 @@
+/*-------------
+ CSS RESET 
+--------------*/
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  font-family: "Libre Franklin", sans-serif;
+  height: 100%;
+  width: 100%;
+}
+body {
+  color: #000000;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/*---------------------
+ * Header
+----------------------*/
+
+.header_global {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 50px;
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 9;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+.header_global .logo {
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .header_global .logo {
+    float: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .header_global .nav_menu {
+    float: right;
+  }
+}
+
+
+.header_global .nav_menu li {
+  display: inline;
+}
+
+@media (min-width: 768px) {
+  .header_global .nav_menu li {
+    float: left;
+  }
+}
+
+
+.menu_list {
+  display: inline-block;
+  margin: 1rem;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 0.71px;
+  text-align: center;
+  line-height: 40px;
+}
+
+
+@media (min-width: 768px) {
+  .menu_list {
+    display: inline;
+    margin: 1rem;
+    font-weight: 100;
+   line-height: 40px;}
+}
+
+.header_global:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.header_global nav:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+#menu_active {
+  opacity: 1;
+}
+
+#menu_inactive {
+  opacity: 0.5;
+}
+
+.logo{
+}
+
+.logo-sun{
+  padding-top: 3px;
+  width: 36px;
+  float: left;
+}
+
+.logo-name{
+  padding-top: 5px;
+  line-height: 40px;
+/* Seonyu Kim: */
+font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  color: #000000;
+  letter-spacing: 0.71px;
+  text-align: center;
+  line-height: 40px;
+}
+
+
+
+/*---------------------
+ * intro
+----------------------*/
+
+
+.content {
+  padding-top : 200px;
+}
+
+.sun {
+  display: flex;
+  justify-content: flex-start;
+  width: 48px;
+  height: 50px;
+}
+.intro {
+  padding-top: 20px;
+}
+
+.intro-box {
+  display: inline-block;
+  max-width: 900px;
+  margin: 0 auto;
+  margin: 30px;
+}
+
+
+.lead {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.54;
+  letter-spacing: -0.4px;
+  text-align: left;
+  padding-top: 50px;
+}
+
+
+
+.intro-body {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: 0.1px;
+  text-align: left;
+  padding-top: 10px;
+  opacity: 0.9;
+}
+
+/*-------skills------*/
+
+.skills-container {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.skills-header {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0.31px;
+  text-align: center;
+  line-height: 28px;
+}
+
+.skills-list {
+  text-align: center;
+  border : 1px solid;
+  margin: 4px;
+  display: inline-block;
+  border-radius: 19px;
+  padding-left: 14px;
+  padding-right: 14px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.skills-text {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: -0.3px;
+  text-align: center;
+}
+
+
+/*-----------------
+ footer
+------------------*/
+
+.social-box {
+  margin-top: 100px;
+  padding: 50px;
+  max-width: 800px;
+  display: inline-block;
+}
+
+.social-container {
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.footer-seonyu {
+  margin-top: 30px;
+  text-align: center;
+  color: #BEC2C9;
+  max-width: 800px;
+}
+
+.footer-seonyu:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.social {
+  margin-top: 30px;
+  text-align: center;
+  display: inline-block;
+}
+
+.social-list {
+  float: right;
+  margin: 4px;
+}
+
+.social-list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+}
+
+.social-icon-img {
+  width: 100%;
+}

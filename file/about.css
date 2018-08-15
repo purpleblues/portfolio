@@ -1,0 +1,425 @@
+/*-------------
+ CSS RESET 
+--------------*/
+
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  font-family: "Libre Franklin", sans-serif;
+  height: 100%;
+  width: 100%;
+  background-color: #ffab6f;
+}
+body {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/*---------------------
+ * Header
+----------------------*/
+
+.header_global {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  padding: 50px;
+  position: absolute;
+  box-sizing: border-box;
+  z-index: 9;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+.header_global .logo {
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .header_global .logo {
+    float: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .header_global .nav_menu {
+    float: right;
+  }
+}
+
+
+.header_global .nav_menu li {
+  display: inline;
+}
+
+@media (min-width: 768px) {
+  .header_global .nav_menu li {
+    float: left;
+  }
+}
+
+
+.menu_list {
+  display: inline-block;
+  margin: 1rem;
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  letter-spacing: 0.71px;
+  text-align: center;
+  line-height: 40px;
+}
+
+
+@media (min-width: 768px) {
+  .menu_list {
+    display: inline;
+    margin: 1rem;
+    font-weight: 100;
+   line-height: 40px;}
+}
+
+.header_global:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.header_global nav:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+#menu_active {
+  opacity: 1;
+}
+
+#menu_inactive {
+  opacity: 0.5;
+}
+
+.logo{
+}
+
+.logo-sun{
+  padding-top: 3px;
+  width: 36px;
+  float: left;
+}
+
+.logo-name{
+  padding-top: 5px;
+  line-height: 40px;
+/* Seonyu Kim: */
+font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  color: #000000;
+  letter-spacing: 0.71px;
+  text-align: center;
+  line-height: 40px;
+}
+
+/*-----------------
+ banner
+------------------*/
+
+
+.banner-container {
+  height: 45%;}
+
+
+.banner {
+  height: 100%;
+  background-color: #ffab6f;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;}
+
+.sun {
+  position: absolute;
+  bottom: -48%;
+  width: 110px;
+  height: 110px;
+}
+
+.sun-02{
+  width: 88px;
+  height: 20px; 
+}
+
+
+
+
+/*---------------------
+ * intro
+----------------------*/
+
+
+.content {
+  background-color: #ec5d66;
+}
+
+.intro {
+  padding-top: 20px;
+}
+
+.intro-box {
+  display: inline-block;
+  max-width: 900px;
+  margin: 0 auto;
+  margin: 30px;
+}
+
+
+.lead {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Rubik', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.54;
+  letter-spacing: -0.4px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+
+
+.intro-body {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: 0.1px;
+  text-align: center;
+  padding-top: 10px;
+  opacity: 0.9;
+}
+
+/*-------skills------*/
+
+.skills-container {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+.skills-header {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  font-size: 16px;
+  color: #FFFFFF;
+  letter-spacing: 0.31px;
+  text-align: center;
+  line-height: 28px;
+}
+
+.skills-list {
+  text-align: center;
+  border : 1px solid;
+  margin: 4px;
+  display: inline-block;
+  border-radius: 19px;
+  padding-left: 14px;
+  padding-right: 14px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.skills-text {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: -0.3px;
+  text-align: center;
+}
+
+
+/*-----------------
+ footer
+------------------*/
+
+.social-box {
+  margin-top: 100px;
+  padding: 50px;
+  max-width: 800px;
+  display: inline-block;
+}
+
+.social-container {
+  display: inline-block;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.footer-seonyu {
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  max-width: 800px;
+}
+
+.footer-seonyu:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.social {
+  margin-top: 30px;
+  text-align: center;
+  display: inline-block;
+}
+
+.social-list {
+  float: right;
+  margin: 4px;
+}
+
+.social-list:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+}
+
+.social-icon-img {
+  width: 100%;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  border-radius: 4px;
+  background-color: #fefefe;
+  margin: 2% auto; /* 15% from the top and centered */
+  padding: 10px;
+  border: 1px solid #888;
+  width: 90%; 
+  margin-top: 30%;
+}
+
+
+
+@media (min-width: 768px) {
+  .modal-content {
+      border-radius: 4px;
+      background-color: #fefefe;
+      margin: 10% auto; /* 15% from the top and centered */
+      padding: 20px;
+      width: 50%; 
+  }
+}
+
+.modal-content-inner{
+  padding: 10px;
+}
+.sun_easteregg{
+  width: 90%;
+  margin: 10px;
+  border-radius: 2px;
+}
+
+
+
+@media (min-width: 768px) {
+  .sun_easteregg{
+  width: 70%;
+  margin: 30px;
+  border-radius: 2px; }
+}
+
+.modal-text{
+  margin-bottom: 20px;
+}
+
+.modal-des{
+  /* I knew you were goin: */
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  color: #BEBEBE;
+  letter-spacing: 0.27px;
+  text-align: center;
+  line-height: 32px;
+}
+
+.modal-title{
+  /* I’m Sun yu!: */
+  font-family: 'Rubik', sans-serif;
+  font-weight: 800;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #F08068;
+  letter-spacing: 0.47px;
+  text-align: center;
+  line-height: 32px;
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
